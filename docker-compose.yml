@@ -1,0 +1,7 @@
+services:
+  netbox-mcp-server:
+    build: .
+    env_file: .env
+    ports:
+      - "10000:8000"
+    restart: unless-stopped
